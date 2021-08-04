@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Icon" href="./fav.ico">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
@@ -13,11 +14,26 @@
 
 <body>
     <div class="container">
+        <h1 class="my-4 text-center">Enter To Win</h1>
         <div class="row py-5">
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="exampleFormControlTextarea1">Input Names</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+                </div>
+
+                <div class="my-4">
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Show Names
+                    </button>
+                </div>
+                <div class="collapse" id="collapseExample">
+                    <ul class="list-group">
+                        <li class="list-group-item">First Winner:</li>
+                        <li class="list-group-item">Second Winner:</li>
+                        <li class="list-group-item">Third Winner:</li>
+                    </ul>
                 </div>
             </div>
 
@@ -31,7 +47,7 @@
                     </div>
                 </div>
                 <div class="my-5">
-                    <button type="button" class="btn btn-outline-success btn-lg btn-block">Block level button</button>
+                    <button type="button" class="btn btn-outline-success btn-lg btn-block">Give a try</button>
                 </div>
                 <div class="border p-5">
                     <ul class="list-group font-weight-bold">
